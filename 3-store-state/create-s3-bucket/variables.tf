@@ -2,8 +2,8 @@ variable "bucket_name" {
   default = "tfstate"
 }
 variable "namespace" {
-  default = "engineering-prod"
+  default = "acme-moose-engineering-prod"
 }
 variable "identity" {
-  default = "anaconda"
+  default = "moose"
 }

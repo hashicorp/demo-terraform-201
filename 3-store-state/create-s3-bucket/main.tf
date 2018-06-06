@@ -1,13 +1,13 @@
-terraform {
-  backend "s3" {
-    bucket  = "engineering-prod-tfstate"
-    key     = "root.tfstate"
-    encrypt = true
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket  = "acme-moose-prod-tfstate"
+#     key     = "root.tfstate"
+#     encrypt = true
+#   }
+# }
 
 provider "aws" {
-  version    = "~> 1.16"
+  version    = "=> 1.20.0"
 }
 
 resource "aws_s3_bucket" "tfstate_store" {
