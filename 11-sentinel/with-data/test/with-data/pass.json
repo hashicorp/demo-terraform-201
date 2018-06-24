@@ -1,0 +1,25 @@
+{
+  "global": {
+    "instance_type": "t2.medium",
+    "ami": {
+      "id": "ami-e474db9c"
+    },
+    "tfplan": {
+      "random_pet": {
+        "server": {
+          "0": {
+            "applied": {
+              "id": "deciding-pegasus",
+              "length": "2",
+              "separator": "-"
+            },
+            "diff": {}
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "main": true
+  }
+}

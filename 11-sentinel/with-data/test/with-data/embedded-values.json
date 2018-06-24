@@ -1,0 +1,11 @@
+{
+  "global": {
+    "instance_type": "Xt2.nanoX",
+    "ami": {
+      "id": "Xami-11111111X"
+    }
+  },
+  "test": {
+    "main": false
+  }
+}
