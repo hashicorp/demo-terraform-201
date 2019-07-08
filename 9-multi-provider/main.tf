@@ -51,14 +51,15 @@ resource "aws_instance" "example" {
   vpc_security_group_ids = ["${aws_security_group.training.id}"]
 
   key_name = "${aws_key_pair.training.id}"
-
-  tags {
+  
+  tags = {
     Name = "${var.identity}-simple-instance"
   }
 
   connection {
     user        = "ubuntu"
     private_key = "${file("~/.ssh/id_rsa")}"
+    host        = aws_instance.example.public_ip
   }
 
   provisioner "remote-exec" {
