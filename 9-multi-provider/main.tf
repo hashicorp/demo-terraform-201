@@ -46,19 +46,20 @@ resource "aws_key_pair" "training" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "${var.ami}"
-  instance_type = "t2.micro"
+  ami                    = "${var.ami}"
+  instance_type          = "t2.micro"
   vpc_security_group_ids = ["${aws_security_group.training.id}"]
 
   key_name = "${aws_key_pair.training.id}"
 
-  tags {
+  tags = {
     Name = "${var.identity}-simple-instance"
   }
 
   connection {
     user        = "ubuntu"
     private_key = "${file("~/.ssh/id_rsa")}"
+    host        = aws_instance.example.public_ip
   }
 
   provisioner "remote-exec" {
