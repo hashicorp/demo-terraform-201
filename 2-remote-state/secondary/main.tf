@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MIT
+
 terraform {}
 
 data "terraform_remote_state" "primary" {
