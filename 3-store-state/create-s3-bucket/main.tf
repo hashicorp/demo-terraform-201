@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MIT
+
 # terraform {
 #   backend "s3" {
 #     bucket  = "acme-moose-prod-tfstate"
