@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MIT
+
 
 output "bucket" {
   value = "${aws_s3_bucket.tfstate_store.bucket}"

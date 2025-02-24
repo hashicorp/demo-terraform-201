@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MIT
+
 main = rule {
   instance_type_is_medium and
     ami_is_present and
