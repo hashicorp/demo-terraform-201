@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2018, 2026
+
 variable "bucket_name" {
   default = "tfstate"
 }

@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2018, 2026
+
 main = rule {
   instance_type_is_medium and
     ami_is_present and

@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2018, 2026
+
 variable "primary_bucket_name" {
   default = "acme-moose-prod-tfstate"
 }

@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2018, 2026
+
 output "public_ip" {
   value = "8.8.8.8"
 }
